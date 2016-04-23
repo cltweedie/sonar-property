@@ -2,7 +2,13 @@ window.SearchForm = React.createClass({
   render: function() {
     return (
       <form className="form-group" onSubmit={this.search}>
-        <input type="search" name="address" className="form-control" ref="address" />
+
+        <input type="search"
+               name="address"
+               className="form-control"
+               ref="address"
+               placeholder="Location" />
+
         <button className="btn btn-primary">Search</button>
       </form>
     )
