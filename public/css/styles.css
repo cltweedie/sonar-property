@@ -5,3 +5,30 @@
 h1 {
   font-size: 5em;
 }
+
+dd {
+  margin-bottom: 5px;
+}
+
+.main-image, .side-image {
+  border: solid #585858 1px;
+}
+
+.side-image {
+  margin-bottom: 10px;
+}
+
+.panel-default {
+  border: solid #585858 1px;
+  border-radius: 0;
+}
+
+.form-group .form-control, .btn-default {
+  border: solid #585858 1px;
+  border-radius: 0;
+}
+
+.btn-default {
+  margin-top: 20px;
+  font-size: 1.25em;
+}

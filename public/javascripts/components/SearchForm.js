@@ -30,7 +30,7 @@ window.SearchForm = React.createClass({
                  ref="max_price" />
         </div>
 
-        <button className="btn btn-primary">Search</button>
+        <button className="btn btn-default">Search</button>
       </form>
     )
   },

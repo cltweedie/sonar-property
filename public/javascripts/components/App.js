@@ -11,7 +11,7 @@ var App = React.createClass({
         <div className="col-md-3">
           <SearchResults showProperty={this.showProperty} results={this.state.results} />
         </div>
-        <div className="col-md-3">
+        <div className="col-md-6">
           <SelectedResult property={this.state.viewProperty}/>
         </div>
       </div>
