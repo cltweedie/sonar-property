@@ -8,7 +8,7 @@ window.ResultBox = React.createClass({
     return (
       <div className="panel panel-default pointer" onClick={this.selectProperty} >
         <div className="panel-body">
-          <img className="col-md-5" src={"http://mr0.homeflow.co.uk/" + photo} />
+          <img className="col-md-5" src={"https://mr0.homeflow.co.uk/" + photo} />
           <div className="col-md-7">
             <h3>{property.price}</h3>
             <p>{property.display_address}</p>
