@@ -20,13 +20,20 @@ var App = React.createClass({
   search: function(params) {
     var _this = this;
     var address = params['address'].value;
-    $.get('http://localhost:9393/search?search[address]=' + address, function(response) {
-      console.log(response);
-      _this.setState({results: response})
+    var channel = params['channel'].value;
+    var min_price = params['min_price'].value;
+    var max_price = params['max_price'].value;
+    var url = 'http://localhost:9393/search?search[address]=' + address +
+              '&search[channel]=' + channel + '&search[min_price]=' + min_price +
+              '&search[max_price]=' + max_price;
+
+    $.get(url,
+      function(response) {
+        console.log(response);
+        _this.setState({results: response})
     });
   },
   showProperty: function(property) {
-    console.log('showing property ' + property);
     this.setState({viewProperty: property})
   }
 })
