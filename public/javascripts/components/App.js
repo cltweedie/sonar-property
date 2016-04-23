@@ -23,7 +23,7 @@ var App = React.createClass({
     var channel = params['channel'].value;
     var min_price = params['min_price'].value;
     var max_price = params['max_price'].value;
-    var url = 'http://sonar-property.herokuapp.com/search?search[address]=' + address +
+    var url = 'https://sonar-property.herokuapp.com/search?search[address]=' + address +
               '&search[channel]=' + channel + '&search[min_price]=' + min_price +
               '&search[max_price]=' + max_price;
 
