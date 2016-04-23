@@ -1,6 +1,6 @@
 var App = React.createClass({
   getInitialState: function() {
-    return {results: []}
+    return {results: [], viewProperty: {}}
   },
   render: function() {
     return (
@@ -9,7 +9,10 @@ var App = React.createClass({
           <SearchForm search={this.search}/>
         </div>
         <div className="col-md-3">
-          <SearchResults results={this.state.results} />
+          <SearchResults showProperty={this.showProperty} results={this.state.results} />
+        </div>
+        <div className="col-md-3">
+          <SelectedResult property={this.state.viewProperty}/>
         </div>
       </div>
     )
@@ -21,6 +24,10 @@ var App = React.createClass({
       console.log(response);
       _this.setState({results: response})
     });
+  },
+  showProperty: function(property) {
+    console.log('showing property ' + property);
+    this.setState({viewProperty: property})
   }
 })
 
