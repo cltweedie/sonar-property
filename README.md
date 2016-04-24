@@ -7,6 +7,7 @@ The brief specifically asked for a single-page app, so I opted to use [React.js]
 As 4 hours isn't a huge amount of time to build an app, I chose to use [Bootstrap 3](http://getbootstrap.com/) for it's ready-to-go CSS classes, but customised the styling to make it a bit more bespoke.
 
 I limited myself to the 4 hours specified in the brief, but if I had more time, I would do a few things:
+* Write tests!
 * Implement geocoding and integration with Google maps
 * Namespace the React components so they aren't on the global scope!
 * Add more fields to the search form for number of bedrooms, etc
